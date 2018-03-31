@@ -1,0 +1,126 @@
+/**********
+*** Class Selectors
+*******/
+.about {
+	flex-direction: column;
+}
+.books {
+	flex-direction: column;
+}
+.contact {
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.container {
+	flex-direction: column;
+}
+.display {
+	order: 4;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.flexbox {
+	display: flex;
+	align-items: center;
+}
+.header {
+	position: center;
+	order: 2;
+}
+.last {
+	width: 75px;
+	background-color: #cc0000;
+	border: 1px solid #000 ;
+}
+.nav{
+	margin-bottom: 20px;
+	margin-right: 40px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+/**********
+*** Element Selectors
+*******/
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #cc0000;
+}
+a h1 {
+	color: #000;
+}
+a h1:hover {
+	color: #000;
+}
+button {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #fff;
+}
+form {
+	border: 2px solid #000;
+	background-color: #db1143;
+	color: #fff;
+}
+input {
+	margin-top: 2px;
+}
+textarea {
+	margin-top: 5px;
+}
+h1 {
+	font-family: 'Nanum Brush Script', cursive;
+}
+img {
+	max-width: 500px;
+	border-radius: 50px; 
+	box-shadow: 5px 5px 5px grey;
+	flex: auto;	
+	margin: 2%;
+}
+p {
+	font-family: 'VT323', monospace;
+	margin-left: 10px;
+}
+/**********
+*** MOBILE
+*******/
+@media screen and (max-width: 767px) {	
+	.nav {
+		align-self: flex-start;
+		flex-direction: column;
+		order: 3;
+	}
+	.nav a {
+	margin: 5px;
+	}
+	img{
+		width: 75%;
+	}
+}
+/**********
+*** DESKTOP
+*******/
+@media screen and (min-width: 768px ){
+	.nav {
+		align-self: flex-end;
+		order: 1;
+	}
+	.nav a {
+		margin: 5px;
+		padding: 10px;
+	}
+	.nav a:first-child {
+		border-right: 2px solid #000;
+	}
+	.nav a:last-child {
+		border-left: 2px solid #000;
+	}
+	img {
+		width: 25%;
+	}
+}
